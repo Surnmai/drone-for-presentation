@@ -57,6 +57,10 @@ header {
 section {
   padding: 2rem;
 }
+#wedding {
+  /* padding: 9rem; */
+  margin: 8rem 0 0 0;
+}
 header .logo {
   /* color: var(--color);
   font-size: 2.5rem;
@@ -91,20 +95,16 @@ header .nav li a:hover {
 .home {
   padding: 0;
 }
-.home .home-slider .swiper-wrapper {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-}
 .home .home-slider .box {
   min-height: 100vh;
   background-size: cover !important;
   background-position: center !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 .home .home-slider .content {
-  background: var(--glass-bg);
+  /* background: var(--glass-bg);
   flex: 1 1 45rem;
   max-width: 40rem;
   text-align: center;
@@ -114,29 +114,29 @@ header .nav li a:hover {
   display: flex;
   border-radius: 0.5rem;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   /* justify-content: flex-start; */
   /* position: relative; */
   /* left: 2rem; */
   /* right: 2rem; */
 }
 .home .home-slider .content:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+  /* transform: scale(1.1);
+  cursor: pointer; */
 }
 .home .home-slider .content h3 {
-  color: var(--color);
+  /* color: var(--color);
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 600; */
 }
 .home .home-slider .content p {
-  color: var(--color);
+  /* color: var(--color);
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
 }
 .home .home-slider .swiper-pagination {
-  color: var(--flyer-color);
+  /* color: var(--flyer-color); */
 }
 .btn {
   color: var(--color);
@@ -158,6 +158,14 @@ header .nav li a:hover {
   /* background: white; */
   font-size: 3.5rem;
   font-weight: 600;
+}
+.weddingHeading {
+  color: var(--flyer-color);
+  background: rgb(219, 211, 211);
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  /* margin: 1rem 0 4rem; */
 }
 .gallery-container {
   display: flex;
@@ -261,6 +269,9 @@ header .nav li a:hover {
   background-position: center;
   background-attachment: fixed;
 }
+.about .heading {
+  color: var(--color) !important;
+}
 .about-container {
   display: flex;
   align-items: center;
@@ -284,7 +295,7 @@ header .nav li a:hover {
   flex: 1 1 40rem;
   padding: 2rem;
   text-align: center;
-  color: var(--color);
+  color: rgb(241, 237, 237);
 }
 .about-container .content h3 {
   font-size: 4rem;
@@ -292,7 +303,7 @@ header .nav li a:hover {
   font-weight: 600;
 }
 .about-container .content p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
@@ -413,6 +424,51 @@ header .nav li a:hover {
   opacity: 1;
   pointer-events: auto;
 }
+.section-img {
+  padding-top: 0;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-container .img {
+  width: 70rem;
+  height: 50rem;
+  overflow: hidden;
+  background: var(--box-shadow2);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.image-container .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image-container .slider-top {
+  padding-bottom: 2rem;
+}
+.image-container .slider-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.image-container .content {
+  /* max-width: 0.1rem; */
+  /* padding: 0 8rem; */
+  /* max-width: -8rem; */
+  /* width: 80%; */
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: 80%;
+}
+
 /* media queries */
 @media all and (max-width: 991px) {
   html {
