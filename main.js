@@ -34,7 +34,7 @@ var swiper = new Swiper(".home-slider", {
     },
     centeredSlides: true,
     autoplay: {
-      delay: 8500,
+      delay: 8000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -44,8 +44,31 @@ var swiper = new Swiper(".home-slider", {
   });
 
 
-
-
   // Auto year update
   const year = document.getElementById('year')
   year.innerHTML = new Date().getFullYear()
+
+  // owl carousel
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      dots:false,
+      stagePadding: 50,
+      // smartSpeed:800,
+      autoplaySpeed:800,
+      autoplay:true,
+      autoplayTimeout:2000,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+  }
+  )
